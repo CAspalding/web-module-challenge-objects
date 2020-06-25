@@ -5,16 +5,18 @@ const burger = { name: "Burger", price: 18, category: "Lunch" };
 const breakfastBurrito = { name: "Breakfast Burrito", price: 16, category: "Breakfast" };
 
 /* Task 1a: write a function to return more menu items with the same format as the items above. */
-console.log (latte)
+
 function createMenuItem(name, cost, category) {
    name = { name: name, price: cost, category: category };
    console.log(name)
 }
 
-createMenuItem("Shake", 8, "Drinks")
+
 /* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like */
 
-
+createMenuItem("Shake", 8, "Drinks")
+createMenuItem("Fries", 4, "Lunch")
+createMenuItem("Fried Pickles", 11, "Appetizer")
 
 /* Task 2: You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to your burger object that automatically calculates price given a string as a parameter. 
 
