@@ -73,14 +73,14 @@ console.log(reviews[5].feedback)
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
-reviews.push({ name: "Cassidy", rating: 11, feedback: "A fantastic place to dine. I love it here. I plan on getting married here, as well as living here. I have devoted my entire existance to this place" })
+reviews.unshift({ name: "Cassidy", rating: 11, feedback: "A fantastic place to dine. I love it here. I plan on getting married here, as well as living here. I have devoted my entire existance to this place" })
 console.log(reviews[8])
 
 
 /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays" */
 
-reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays"
-console.log(reviews[7])
+reviews[8].feedback = "this place is chill with really cool people, great for getting work done on weekdays"
+console.log(reviews[8])
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
@@ -109,10 +109,11 @@ and should return a string in the format `name} gave the restaurant a {rating}, 
 
 For example, if getLastReview is invoked passing the reviews array it will return `Reyna gave the restaurant a 3.5 star review and their feedback was: "this place is chill with really cool people, great for getting work done on weekdays"`.
 */
-function getLastReview(/* code here */) {
-  /* code here */
+function getLastReview(array) {
+  console.log(array[array.length - 1].name, "gave the restaurant a", array[array.length - 1].rating, "star review and their feedbak", array[array.length - 1].feedback )
 }
 
+getLastReview(reviews)
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
