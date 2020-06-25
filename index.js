@@ -1,14 +1,35 @@
 ///////////////Menu Items (MVP)///////////////////
 
-const latte = { name: "Cafe Latte", price: 4, category: "Drinks" };
-const burger = { name: "Burger", price: 18, category: "Lunch" };
-const breakfastBurrito = { name: "Breakfast Burrito", price: 16, category: "Breakfast" };
+const latte = {
+  name: "Cafe Latte",
+  price: 4,
+  category: "Drinks"
+};
+const burger = {
+  name: "Burger",
+  price: 18,
+  category: "Lunch",
+  discount: function discount(string) {
+    if (string === "teacher") {
+      console.log(this.price * .75);
+    } else if (string === "student") {
+      console.log(this.price * .75);
+    } else {
+      console.log(this.price * .90);
+    };
+  }
+};
+const breakfastBurrito = {
+  name: "Breakfast Burrito",
+  price: 16,
+  category: "Breakfast"
+};
 
 /* Task 1a: write a function to return more menu items with the same format as the items above. */
 
 function createMenuItem(name, cost, category) {
-   name = { name: name, price: cost, category: category };
-   console.log(name)
+  name = { name: name, price: cost, category: category };
+  console.log(name)
 }
 
 
@@ -28,7 +49,7 @@ and should return a number.
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
 
-
+burger.discount("g")
 
 ///////////////Reviews (MVP)///////////////////
 
