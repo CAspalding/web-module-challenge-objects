@@ -73,11 +73,14 @@ console.log(reviews[5].feedback)
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
-reviews.push({name: "Cassidy", rating: 11, feedback: "A fantastic place to dine. I love it here. I plan on getting married here, as well as living here. I have devoted my entire existance to this place"})
+reviews.push({ name: "Cassidy", rating: 11, feedback: "A fantastic place to dine. I love it here. I plan on getting married here, as well as living here. I have devoted my entire existance to this place" })
 console.log(reviews[8])
 
 
-/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays" */
+
+reviews[7].feedback = "this place is chill with really cool people, great for getting work done on weekdays"
+console.log(reviews[7])
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
